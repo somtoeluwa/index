@@ -17,8 +17,6 @@ switch($wantedgood){
         echo "You have to be 16 to buy ". $wantedgood;
         break;
 }
-*/
-
 
 $provisionedActivities = array(	"Specs","Drugs","Rock and Roll");
     foreach($provisionedActivities as $x){
@@ -30,6 +28,17 @@ $provisionedActivities[1]="hugs";
 unset($provisionedActivities[2]);
 
 echo $provisionedActivities[2];
+*/
+
+$goods = array(	"Specs","Mugs","sausage Rolls");
+$x;
+$y;
+
+for ($i = 1;$i< 30; $i++){
+   echo "On the ". $i. " of the month" . $goods. "are available";
+
+}
+
 
 
 ?>
