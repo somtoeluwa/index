@@ -29,9 +29,7 @@ $provisionedActivities[1]="hugs";
 
 unset($provisionedActivities[2]);
 
-foreach($provisionedActivities as $x){
-    print "<p>$x</p>";
-}
+echo $provisionedActivities[2];
 
 
 ?>
