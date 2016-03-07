@@ -6,7 +6,7 @@
  * Time: 10:51
  */
 
-$wantedgood = "mugs";
+$wantedgood = "sausage";
 
 switch($wantedgood){
 
