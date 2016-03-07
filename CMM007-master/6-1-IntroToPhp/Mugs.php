@@ -14,6 +14,8 @@
      <label>Age:</label>
      <input type="number" name="age" value=""/>
 
+     <input type="submit" value="Submit" name="submit"/>
+
  </form>
 
 <?php
