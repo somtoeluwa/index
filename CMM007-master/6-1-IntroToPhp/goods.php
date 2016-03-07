@@ -35,7 +35,8 @@ $x;
 $y;
 
 for ($i = 1;$i< 30; $i++){
-   echo "On the ". $i. " of the month" . $goods. "are available";
+   echo "On the ". $i. " of the month " . $goods[$i]. " are available";
+    echo "<br>";
 
 }
 
