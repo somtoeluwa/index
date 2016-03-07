@@ -26,12 +26,12 @@ if ($myage >= 21) {
     echo "<br>";
     echo $myName . " " . "you can buy sausage, mugs and specs";
 }
-if ($myage >=18  ){
+elseif ($myage >=18  ){
     echo "<br>";
     echo $myName. " ". "you can buy mugs and specs";
 }
 
-if ($myage >= 16){
+elseif ($myage >= 16){
     echo $myName. " ". "you can only buy specs";
 }
 else echo "GO HOME!";
