@@ -6,7 +6,7 @@
  * Time: 10:51
  */
 
-$wantedgood = "sausage";
+/*$wantedgood = "sausage";
 
 switch($wantedgood){
 
@@ -17,5 +17,13 @@ switch($wantedgood){
         echo "You have to be 16 to buy ". $wantedgood;
         break;
 }
+*/
+
+
+$provisionedActivities = array(	"Specs","Drugs","Rock and Roll");
+    foreach($provisionedActivities as $x){
+        print "<p>$x</p>";
+    }
+
 
 ?>
