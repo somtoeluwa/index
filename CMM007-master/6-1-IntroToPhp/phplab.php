@@ -18,5 +18,15 @@ echo "My name is ". $myname . " and i am ". $myage;
 
 // comments
 
+echo "<br>";
+echo "<br>";
 
+$name = "Edgar";
+
+if ($name == "Simon" ){
+    print "i know you";
+}
+else {
+    print "Who are you?";
+}
 ?>
