@@ -12,7 +12,7 @@ header{
     margin-right: auto;
 }
 
-header img{
+#logo{
     width:280px;
     height: 90px;
     float: left
@@ -36,11 +36,14 @@ li {
     background-color: white;
 }
 
-main {
+body{
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
-    height: 500px;
+}
+
+main {
+
     background-color: aliceblue;
 }
 
@@ -60,8 +63,17 @@ main {
     float: right;
 }
 
+#quickfix {
+    clear: both;
+}
+
+#bannerimg {
+    max-width: 960px;
+}
 footer{
     max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: auto;
     background-color: grey;
 

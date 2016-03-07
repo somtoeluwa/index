@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <img src="assets/csdmlogo.png" alt="demo"/>
+    <img id = "logo" src="assets/csdmlogo.png" alt="demo"/>
     <br>
     <br>
     <br>
@@ -28,10 +28,13 @@
             <li>Industry</li>
         </ul>
     </nav>
+    <section>
+        <img id="bannerimg" src="assets/banner.png">
+    </section>
 </header>
 
-<main >
-    <section class="grid-66" id="cont1">
+<main class="grid-container">
+    <section class="grid-66 mobile-grid-100 tablet-grid-50" id="cont1">
         <h2>Section 1</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Aenean vitae dapibus diam, imperdiet efficitur ex. In ac diam at mauris euismod lobortis.
@@ -43,7 +46,9 @@
     </section>
 
     </section>
-    <section class="grid-33" id="cont2">
+
+    <aside class="grid-33" id="cont2">
+        <section>
         <h2>Section 3</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Aenean vitae dapibus diam, imperdiet efficitur ex. In ac diam at mauris euismod lobortis.
@@ -52,8 +57,8 @@
             Proin faucibus scelerisque felis, ut commodo massa egestas vel. Aenean libero dolor, ultrices eget sem rutrum, blandit cursus arcu.
             Donec lectus lectus, dapibus id enim a, aliquam aliquet ligula. Nam at sapien ex.
             Aliquam at pharetra ligula, sed semper ex. Quisque eu posuere tellus.</p>
-    </section>
-   <!-- <aside>
+        </section>
+        <section>
         <h2>Section 4</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Aenean vitae dapibus diam, imperdiet efficitur ex. In ac diam at mauris euismod lobortis.
@@ -62,9 +67,11 @@
             Proin faucibus scelerisque felis, ut commodo massa egestas vel. Aenean libero dolor, ultrices eget sem rutrum, blandit cursus arcu.
             Donec lectus lectus, dapibus id enim a, aliquam aliquet ligula. Nam at sapien ex.
             Aliquam at pharetra ligula, sed semper ex. Quisque eu posuere tellus.</p>
-    </aside>-->
+        </section>
+    </aside>
 
 </main>
+<div id="quickfix"></div>
 <footer>
     <p>(c) 2016 1412632</p>
 </footer>
