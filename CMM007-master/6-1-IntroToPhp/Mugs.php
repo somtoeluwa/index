@@ -22,17 +22,23 @@
 $myName = $_POST['name'];
 $myage = $_POST['age'];
 
+if ($myage >= 21) {
+    echo "<br>";
+    echo $myName . " " . "you can buy sausage, mugs and specs";
+}
+if ($myage >=18  ){
+    echo "<br>";
+    echo $myName. " ". "you can buy mugs and specs";
+}
+
 if ($myage >= 16){
-    echo $myName. " ". "you can buy specs";
+    echo $myName. " ". "you can only buy specs";
 }
-elseif ($myage >=18 ){
-    echo "<br>";
-    echo $myName. " ". "you can buy mugs";
-}
-elseif ($myage >= 21){
-    echo "<br>";
-    echo $myName. " ". "you can buy sausage";
-}
+else echo "GO HOME!";
+
+
+
+
 
 
 ?>
