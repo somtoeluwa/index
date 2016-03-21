@@ -7,9 +7,9 @@
 
 <body>
 <ul>
-<li><a href="helloPrinter.php?query=Earth"</a></li><br>
-<li><a href="helloPrinter.php?query=Mars"</a></li><br>
-<li><a href="helloPrinter.php?query=Jupiter"</a></li><br>
+<li><a href="helloPrinter.php?query=Earth">Earth</a></li>
+<li><a href="helloPrinter.php?query=Mars">Mars</a></li>
+<li><a href="helloPrinter.php?query=Jupiter">Jupiter</a></li>
 
 </ul>
 </body>
