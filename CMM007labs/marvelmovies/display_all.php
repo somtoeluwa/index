@@ -19,7 +19,7 @@ while($row = $result->fetch_array())
     $movieTitle = $row['title'];
     $productionStudio = $row['productionStudio'];
 
-echo "<p>" . $movieTitle . $productionStudio. "</p>";
+echo "<p>" . $movieTitle ."   ". $productionStudio. "</p>";
 }
 
 
