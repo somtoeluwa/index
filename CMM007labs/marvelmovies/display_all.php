@@ -18,10 +18,10 @@ while($row = $result->fetch_array())
     $notes = $row['notes'];
 
     echo "<p>" . $movieTitle ."</p>";
-    echo "<br>";
     echo "<p>" . $yearReleased ."</p>";
     echo "<p>" . $productionStudio ."</p>";
     echo "<p>" . $notes ."</p>";
+    echo "<br>";
 }
 
 
