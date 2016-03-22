@@ -18,6 +18,7 @@ while($row = $result->fetch_array()){
     echo "<p>" . $row['firstName'] . "</p>";
     echo "<p>" . $row['lastname'] . "</p>";
     echo "<p>" . $row['mainSuperpower'] . "</p>";
+    echo "<br>";
 }
 $result->close();
 $db->close();
