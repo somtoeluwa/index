@@ -10,8 +10,18 @@
 </header>
 <main>
     <form action="formResponse.php" method="post">
-        <label>Forename:</label><input type="text" name="forename"><br>
+        <label>Forename:</label><input type="text" name="forename">
+        <br><br>
         <label>Surname:</label><input type="text" name="surname">
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male">male
+        <input type="radio" name="gender" value="Female">male
+        <input type="radio" name="gender" value="Alien">Alien
+        <br><br>
+        <label>Describe your Powers:</label>
+        <textarea name="power" cols="45" rows="6"></textarea>
+        <br><br>
         <input type="submit" value="submit">
     </form>
 

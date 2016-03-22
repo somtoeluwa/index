@@ -7,7 +7,13 @@
  */
 $forename = $_POST["forename"];
 $surname = $_POST["surname"];
-echo $forename . $surname;
+$gender = $_POST["gender"];
+$power = $_POST["power"];
+
+echo "<p>{$forename}</p>";
+echo "<p>{$surname}</p>";
+echo "<p>{$gender}</p>";
+echo "<p>{$power}</p>";
 
 
 ?>
