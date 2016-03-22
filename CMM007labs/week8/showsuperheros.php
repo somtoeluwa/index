@@ -14,7 +14,7 @@ $sql = "SELECT * FROM superheros";
 $result = $db->query($sql);
 
 while($row = $result->fetch_array()){
-    echo "<p>" . $row['superheroID'] . "</p>";
+   // echo "<p>" . $row['superheroID'] . "</p>";
     echo "<p>" . $row['firstName'] . "</p>";
     echo "<p>" . $row['lastname'] . "</p>";
     echo "<p>" . $row['mainSuperpower'] . "</p>";

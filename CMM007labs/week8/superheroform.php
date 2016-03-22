@@ -22,7 +22,7 @@
         <label>Describe your Powers:</label>
         <textarea name="power" cols="45" rows="6"></textarea>
         <br><br>
-        <input type="submit" value="submit">
+        <input type="submit" name="submit" value="submit">
     </form>
 
 </main>
