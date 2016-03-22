@@ -13,7 +13,7 @@ $surname = $_POST["surname"];
 $gender = $_POST["gender"];
 $power = $_POST["power"];
 
-$sql_query = "INSERT INTO (superheroID,firstname,lastname,mainSuperpower)
+$sql_query = "INSERT INTO superheros (superheroID,firstname,lastname,mainSuperpower)
               VALUES ('$forename','$surname','$gender','$power')";
 $result = $db->query($sql_query);
 
