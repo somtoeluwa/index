@@ -11,10 +11,10 @@
 
     <label for="superheroes">SuperHero name:</label>
 <?php
-    $sql = "SELECT superheroID,firstName FROM superheros ORDER BY superheroID";
+    $sql = "SELECT superheroID,firstName FROM superheros";
         echo "<select name=superheroes value=''>Superhero Name</option>"; // list box select command
     foreach ($db->query($sql) as $row){//Array or records stored in $row
-    echo "<option value=$row[id]>$row[name]</option>";
+    echo "<option value=$row[superheroID]>$row[firstName]</option>";
    /* Option values are added by looping through the array */
 }
 echo "</select>";
