@@ -15,8 +15,8 @@
         <label>Surname:</label><input type="text" name="surname">
         <br><br>
         <label>Gender:</label>
-        <input type="radio" name="gender" value="Male">male
-        <input type="radio" name="gender" value="Female">male
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
         <input type="radio" name="gender" value="Alien">Alien
         <br><br>
         <label>Describe your Powers:</label>
