@@ -9,5 +9,7 @@
 
 session_start();
 
+    if (isset($_SESSION['access_level'])) {
+        echo "<p>You are currently logged in as a standard user</p>";
+    }
 
-print $_SESSION['access_level'];
