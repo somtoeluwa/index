@@ -17,6 +17,6 @@ if ($username=="Mike" && $password=="mysecretpassword")
     setcookie('access_level','standarduser');
 }
 
-header('Location: loggedIn.php');
+header('Location: homepage.php');
 
 ?>
