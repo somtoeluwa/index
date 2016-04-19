@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Tracker</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
+</head>
+
+
+
+<body>
+
+<!-- Header Start -->
+<header>
+    <!--logo-->
+    <div id="logo">
+        <img src="resources/logo.png" alt="LOGO"/>
+    </div>
+
+    <h2>Bug Tracker</h2>
+    <p>Keeping track of pesky bugs</p>
+
+</header>
+
+<!--Main Start-->
+<main class="grid-container">
+
+    <!-- Nav start -->
+    <nav id="links">
+        <ul>
+            <li><a href="showbugs.html">All Bug items</a></li>
+            <li><a href="#bugs.html">Android bugs</a></li>
+            <li><a href="#bugs.html">iOS Bugs</a></li>
+            <li><a href="#bugs.html">Windows Bugs</a></li>
+            <li><a href="addbugs.html">Insert Bug</a></li>
+        </ul>
+
+    </nav>
+    <!-- Nav End -->
+
+
+    <!-- Content Start-->
+    <section id="content" class="grid-75">
+
+        <form>
+            <label for="bugName">Bug name:</label>
+            <input type="text" name="bugName" value="" id="bugName"/>
+            <label for="bugSummary">Bug Summary</label>
+            <textarea id="bugSummary" cols="30" rows="5" ></textarea>
+            <label for="bugCategory">Bug Category</label>
+            <input type="text" name="bugCategory" value="" id="bugCategory"/>
+            <br>
+            <input type="submit" value="submit"/>
+        </form>
+
+    </section>
+    <!-- Content end -->
+</main>
+<!-- Main End-->
+
+<!-- Footer start -->
+<footer><p>Designed by Somto 2016 </p></footer>
+<!-- footer End -->
+
+</body>
+</html>
