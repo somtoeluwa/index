@@ -11,7 +11,7 @@ include("dbconnect.php");
 
     if(empty($_POST["username"]) || empty($_POST["password"]))
     {
-        echo "<p>retry</p>";
+        echo "<p>lOGIN DETAILS INVALID</p>";
 
     }else
     {
@@ -22,6 +22,8 @@ include("dbconnect.php");
     $sql = "SELECT uid FROM users WHERE username = '$username'
             and
             password = '$password'";
+
+
     $result = mysqli_query($db,$sql);
 
     if (mysqli_num_rows($result) == 1)
