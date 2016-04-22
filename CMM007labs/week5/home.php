@@ -1,3 +1,6 @@
+<?php
+include ("login.php");?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +9,7 @@
 
 <body>
   <p>Curently logged in:<?php
-      include ("login.php");
-      echo $username;
+      echo $_POST["username"];
         ?> </p>
 
 
