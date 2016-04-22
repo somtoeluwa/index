@@ -11,7 +11,8 @@ include("dbconnect.php");
 
     if(empty($_POST["username"]) || empty($_POST["password"]))
     {
-        echo "Both Fields are required";
+        echo "<p>retry</p>";
+
     }else
     {
         $username=$_POST['username'];

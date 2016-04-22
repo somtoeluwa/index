@@ -1,5 +1,3 @@
-<?php
-include ("login.php");?>
 
 <html lang="en">
 <head>
@@ -8,11 +6,14 @@ include ("login.php");?>
 </head>
 
 <body>
-  <p>Curently logged in:<?php
-      echo $_POST["username"];
-        ?> </p>
+
 
 
 <h1>Hello</h1>
+<?php
+ include 'login.php';
+    echo  "<p>".$_GET['username']."</p>";
+
+?>
 </body>
 </html>

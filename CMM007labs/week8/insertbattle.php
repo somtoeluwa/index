@@ -15,6 +15,6 @@ $sql_query = "INSERT INTO battles (superheroID,villanFought)
               VALUES ('$superheroID','$villanFought')";
 $result = $db->query($sql_query);
 
-header('Location: index.html');
+header('Location: index.php');
 
 ?>

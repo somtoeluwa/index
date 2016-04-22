@@ -17,6 +17,6 @@ $power = $_POST["power"];
               VALUES ('$forename','$surname','$power')";
     $result = $db->query($sql_query);
 
-        header('Location: index.html');
+        header('Location: index.php');
 
 ?>
