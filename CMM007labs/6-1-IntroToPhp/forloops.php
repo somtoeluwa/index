@@ -10,12 +10,12 @@
 <?php
 
 $product;
-$month = 30;
+$month = 31;
     if ($month% 4 ==0){
         $product= "sausages";
     }
 
-    for ($i = 0; $i<$month;$i++){
+    for ($i = 1; $i<$month;$i++){
 
         echo "<p> Day ".$i." only";
     }
