@@ -12,7 +12,7 @@
 <h1>Hello</h1>
 <?php
  include 'login.php';
-    echo  "<p>".$_GET['username']."</p>";
+
 
 ?>
 </body>
