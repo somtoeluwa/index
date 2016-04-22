@@ -7,7 +7,7 @@
  */
 
 
-$myage;
+$myage = 5;
 $specs = "Specs";
 $mugs = "mugs";
 $sausage = "Sausage rolls";
