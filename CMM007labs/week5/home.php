@@ -9,11 +9,7 @@
 
 
 
-<h1>Hello</h1>
-<?php
- include 'login.php';
+<h1>Hello <?php echo $_GET['username']; ?></h1>
 
-
-?>
 </body>
 </html>
