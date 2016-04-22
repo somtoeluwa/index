@@ -15,7 +15,7 @@ $month = 30;
         $product= "sausages";
     }
 
-    for ($i; $i<$month;$i++){
+    for ($i = 0; $i<$month;$i++){
 
         echo "<p> Day ".$i." only";
     }
