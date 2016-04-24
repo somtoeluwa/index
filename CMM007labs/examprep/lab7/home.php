@@ -9,4 +9,4 @@
 include 'login.php';
 
 echo "<h3>Welcome</h3>";
-echo "<p>".$username."</p>";
+echo "<p>".$_GET['username']."</p>";
