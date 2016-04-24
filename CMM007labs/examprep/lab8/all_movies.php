@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Movie Database</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -20,24 +21,24 @@
     <tr>
         <?php
 
-            $sql= "SELECT * FROM `marvelmovies`";
+            $sql= "SELECT * FROM marvelmovies";
             $result = mysqli_query($db,$sql);
 
             while($row = $result->fetch_array()){
 
         ?>
 
-        <td><?php echo $row['`marvelMovieID`'];?></td>
-        <td><?php echo $row['`yearReleased`'];?></td>
-        <td><?php echo $row['`title`'];?></td>
-        <td><?php echo $row['`productionStudio`'];?></td>
-        <td><?php echo $row['`notes`'];?></td>
+        <td><?php echo $row['marvelMovieID'];?></td>
+        <td><?php echo $row['yearReleased'];?></td>
+        <td><?php echo $row['title'];?></td>
+        <td><?php echo $row['productionStudio'];?></td>
+        <td><?php echo $row['notes'];?></td>
     </tr>
     <?php
 
     }
-    $result->close();
-    $db->close();
+    //$result->close();
+    //$db->close();
     ?>
 
 
