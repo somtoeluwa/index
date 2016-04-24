@@ -19,13 +19,15 @@ else{
     $username =$_POST["username"];
     $password =$_POST["password"];
 
-    $sql = "SELECT uid FROM users WHERE username = '$username' AND password = '$password' ";
+    $sql = "SELECT uid FROM users WHERE username = '$username'
+            and
+            password = '$password'";
 
     $result = mysqli_query($db,$sql);
 
     if(mysqli_num_rows($result == 1)){
 
-        header("location: home.php?username=$username");
+        header("location: home.php?username={$username}");
 
     }
     else {
