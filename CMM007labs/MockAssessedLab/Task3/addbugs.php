@@ -22,10 +22,10 @@
 
         <div id="navbar" class="col-2">
             <ul>
-                <li><a href="showbugs.html">All bug Items</a></li>
-                <li><a href="#">Android Bugs</a></li>
-                <li><a href="#">iOS Bugs</a></li>
-                <li><a href="#">Windows Bugs</a></li>
+                <li><a href="showbugs.php">All bug Items</a></li>
+                <li><a href="showbugs.php?BugCategory=Android">Android Bugs</a></li>
+                <li><a href="showbugs.php?BugCategory=iOS">iOS Bugs</a></li>
+                <li><a href="showbugs.php?BugCategory=Windows">Windows Bugs</a></li>
                 <li><a href="addbugs.php">Insert Bugs</a></li>
             </ul>
         </div>
