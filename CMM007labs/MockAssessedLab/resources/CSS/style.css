@@ -145,6 +145,9 @@ body{
 .inputBug input[type=submit]{
     margin-left: 25em;
 }
+.inputBug select{
+    margin-left: 10em;
+}
 
 
 
