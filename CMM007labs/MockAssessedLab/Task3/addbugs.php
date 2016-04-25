@@ -1,3 +1,16 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+// execute if requested using HTTP GET Method
+}
+elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+// execute if requested using HTTP POST Method
+}
+else {
+// this is impossible
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,23 +45,44 @@
 
         <div id="content" class="col-10">
 
-            <form class="inputBug">
-                <label for="bugName">Bug Name</label>
-                <input type="text" id="bugName" value="" required >
-                <br><br>
-                <label for="bugSummary">Bug Summary</label>
-                <textarea required id="bugSummary" cols="30" rows="3" value=""></textarea>
-                <br> <br>
-                <label for="bugCategory">Bug Category</label>
-                <select id="bugCategory">
-                    <option value="Android">Android</option>
-                    <option value="iOS">iOS</option>
-                    <option value="Windows">Windows</option>
-                </select>
-                <br> <br>
-                <input type="submit" value="submit">
-            </form>
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+// execute if requested using HTTP GET Method
+?>
+            <form class="inputBug" action = "<?{$_SERVER['PHP_SELF'];}?>" METHOD="post" >
+                <label for="bugName" > Bug Name </label >
+                <input type = "text" id = "bugName" name="bugName" value = "" required >
+                <br ><br>
+                <label for="bugSummary" > Bug Summary </label >
+                <textarea required name="BugSummary" id = "BugSummary" cols = "30" rows = "3" value = "" ></textarea >
+                <br > <br >
+                <label for="BugCategory" > Bug Category </label >
+                <select id = "BugCategory" name="BugCategory" >
+                    <option value = "Android" > Android</option >
+                    <option value = "iOS" > iOS</option >
+                    <option value = "Windows" > Windows</option >
+                </select >
+                <br > <br >
+                <input type = "submit" value = "submit" >
+            </form >
+<?
+}elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+// execute if requested using HTTP POST Method
+    $bugName = $_POST["bugName"];
+    $bugSummary = $_POST["BugSummary"];
+    $BugCategory = $_POST["BugCategory"];
 
+    $sql = "INSERT INTO `bugs` ( `bugName`, `BugSummary`, `BugCategory`)
+            VALUES('$bugName',	'$bugSummary',	'$BugCategory') ";
+
+    header('location: showbugs.php');
+}
+else{
+    header('location: index.php');
+}
+
+
+?>
 
 
         </div>
