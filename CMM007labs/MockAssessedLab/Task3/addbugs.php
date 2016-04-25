@@ -1,13 +1,7 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-// execute if requested using HTTP GET Method
-}
-elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-// execute if requested using HTTP POST Method
-}
-else {
-// this is impossible
-}
+
+
+include 'dbConnect.php';
 ?>
 
 
@@ -72,8 +66,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $bugSummary = $_POST["BugSummary"];
     $BugCategory = $_POST["BugCategory"];
 
-    $sql = "INSERT INTO `bugs` ( `bugName`, `BugSummary`, `BugCategory`)
+    $sql = "INSERT INTO `bugs` ( bugName, BugSummary, BugCategory)
             VALUES('$bugName',	'$bugSummary',	'$BugCategory') ";
+    $result = mysqli_query($db,$sql);
 
     header('location: showbugs.php');
 }
