@@ -1,6 +1,18 @@
 <?php
     include ('dbConnect.php');
 
+if(isset($_GET['BugCategory'])){
+    $category=$_GET['BugCategory'];
+    $sql_query="select * from `bugs` where `BugCategory` ='$category'";
+    $result=$db->query($sql_query);
+    $row = $result->fetch_array();
+}
+else{
+    $sql_query="select * from `bugs`";
+    $result=$db->query($sql_query);
+    $row = $result->fetch_array();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -37,13 +49,7 @@
 
         <div id="content" class="col-10">
             <?php
-            $category = $_GET['BugCategory'];
 
-
-
-                    $sql= "SELECT * FROM `bugs`
-                          ";
-                    $result = mysqli_query($db,$sql);
 
                     while($row =$result->fetch_array()) {
 
