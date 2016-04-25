@@ -2,66 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bug Tracker</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
+    <title>Add Bugs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/CSS/style.css">
 </head>
-
-
 
 <body>
 
-<!-- Header Start -->
+<!-- Header Start-->
 <header>
-    <!--logo-->
-    <div id="logo">
-        <img src="resources/logo.png" alt="LOGO"/>
-    </div>
-
-    <h2>Bug Tracker</h2>
-    <p>Keeping track of pesky bugs</p>
-
+    <img src="resources/logo.png" alt="Logo" id="logo">
+    <h2>BugTracker</h2>
+    <h4>Keeping track of all the pesky bugs</h4>
 </header>
 
-<!--Main Start-->
-<main class="grid-container">
+<!-- Main Start-->
+<main>
+    <div class="row">
 
-    <!-- Nav start -->
-    <nav id="links">
-        <ul>
-            <li><a href="showbugs.html">All Bug items</a></li>
-            <li><a href="#bugs.html">Android bugs</a></li>
-            <li><a href="#bugs.html">iOS Bugs</a></li>
-            <li><a href="#bugs.html">Windows Bugs</a></li>
-            <li><a href="addbugs.html">Insert Bug</a></li>
-        </ul>
+        <div id="navbar" class="col-2">
+            <ul>
+                <li><a href="showbugs.html">All bug Items</a></li>
+                <li><a href="#">Android Bugs</a></li>
+                <li><a href="#">iOS Bugs</a></li>
+                <li><a href="#">Windows Bugs</a></li>
+                <li><a href="addbugs.html">Insert Bugs</a></li>
+            </ul>
+        </div>
 
-    </nav>
-    <!-- Nav End -->
+        <div id="content" class="col-10">
+
+            <form class="inputBug">
+                <label for="bugName">Bug Name</label>
+                <input type="text" id="bugName" value="" required >
+                <br><br>
+                <label for="bugSummary">Bug Summary</label>
+                <textarea required id="bugSummary" cols="30" rows="3" value=""></textarea>
+                <br> <br>
+                <label for="bugCategory">Bug Category</label>
+                <input  required type="text" id="bugCategory" value="">
+                <br> <br>
+                <input type="submit" value="submit">
+            </form>
 
 
-    <!-- Content Start-->
-    <section id="content" class="grid-75">
 
-        <form>
-            <label for="bugName">Bug name:</label>
-            <input type="text" name="bugName" value="" id="bugName"/>
-            <label for="bugSummary">Bug Summary:</label>
-            <textarea id="bugSummary" cols="30" rows="5" ></textarea>
-            <label for="bugCategory">Bug Category:</label>
-            <input type="text" name="bugCategory" value="" id="bugCategory"/>
-            <br>
-            <input type="submit" value="submit"/>
-        </form>
+        </div>
 
-    </section>
-    <!-- Content end -->
+
+    </div>
 </main>
-<!-- Main End-->
 
-<!-- Footer start -->
-<footer><p>Designed by Somto 2016 </p></footer>
-<!-- footer End -->
+<!-- footer Start-->
+<footer>
+    <p>Designed by Sommy B (c)2016</p>
+
+</footer>
 
 </body>
+
+
 </html>
