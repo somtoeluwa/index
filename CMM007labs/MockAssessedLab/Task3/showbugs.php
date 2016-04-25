@@ -42,13 +42,14 @@
 
            // $category=$_GET['BugCategory'];
 
-            if(empty($_GET['BugCategory'])){
+            if($_GET['BugCategory']){
 
-                $sql_query = "select * from `bugs`";
+                $sql_query = "select * from `bugs` WHERE BugCategory  = '$category'";
 
             }else {
 
-                $sql_query = "select * from `bugs` WHERE BugCategory  = '$category'";
+                $sql_query = "select * from `bugs`"; }
+
                 $result = mysqli_query($db, $sql_query);
                 while ($row = $result->fetch_array()) {
 
@@ -62,7 +63,7 @@
 
                     <?php
 
-                }
+               
             }
             ?>
 
