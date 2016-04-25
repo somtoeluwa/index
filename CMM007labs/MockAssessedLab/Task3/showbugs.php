@@ -28,16 +28,21 @@
         <div id="navbar" class="col-2">
             <ul>
                 <li><a href="showbugs.php">All bug Items</a></li>
-                <li><a href="showbugs.php?bugCategory=Android Bug">Android Bugs</a></li>
-                <li><a href="showbugs.php?bugCategory=iOS Bug">iOS Bugs</a></li>
-                <li><a href="showbugs.php?bugCategory=Windows Bug">Windows Bugs</a></li>
+                <li><a href="showbugs.php?BugCategory=Android">Android Bugs</a></li>
+                <li><a href="showbugs.php?BugCategory=iOS">iOS Bugs</a></li>
+                <li><a href="showbugs.php?BugCategory=Windows">Windows Bugs</a></li>
                 <li><a href="addbugs.php">Insert Bugs</a></li>
             </ul>
         </div>
 
         <div id="content" class="col-10">
             <?php
-                    $sql= "SELECT * FROM `bugs`";
+            $category = $_GET['BugCategory'];
+
+
+
+                    $sql= "SELECT * FROM `bugs`
+                          ";
                     $result = mysqli_query($db,$sql);
 
                     while($row =$result->fetch_array()) {
