@@ -43,10 +43,8 @@
            // $category=$_GET['BugCategory'];
 
             $sql_query="select * from `bugs`";
-            $result=$db->query($sql_query);
-            $row = $result->fetch_array();
-
-                    while($row =$result->fetch_array()) {
+            $result=mysqli_query($db,$sql_query);
+            while($row =$result->fetch_array()) {
 
                         ?>
 
