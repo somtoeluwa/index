@@ -1,15 +1,8 @@
 <?php
     include ('dbConnect.php');
 
-/*if(isset($_GET['BugCategory'])){
+    $category=$_GET['BugCategory'];
 
-}
-else{
-    $sql_query="select * from `bugs`";
-    $result=$db->query($sql_query);
-    $row = $result->fetch_array();
-}
-*/
 ?>
 
 <!DOCTYPE html>
@@ -46,8 +39,10 @@ else{
 
         <div id="content" class="col-10">
             <?php
-            $category=$_GET['BugCategory'];
-            $sql_query="select * from `bugs` where `BugCategory` ='$category'";
+
+           // $category=$_GET['BugCategory'];
+
+            $sql_query="select * from `bugs`";
             $result=$db->query($sql_query);
             $row = $result->fetch_array();
 
