@@ -42,21 +42,28 @@
 
            // $category=$_GET['BugCategory'];
 
-            $sql_query="select * from `bugs`";
-            $result=mysqli_query($db,$sql_query);
-            while($row =$result->fetch_array()) {
+            if(empty($_GET['BugCategory'])){
 
-                        ?>
+                $sql_query = "select * from `bugs`";
 
-                        <div id="bugitem">
-                            <h3><?php echo $row['bugName'] ?></h3>
-                            <h5><?php echo $row['BugCategory'] ?></h5>
-                            <p><?php echo $row['BugSummary'] ?></p>
-                        </div>
+            }else {
 
-                        <?php
+                $sql_query = "select * from `bugs` WHERE BugCategory  = '$category'";
+                $result = mysqli_query($db, $sql_query);
+                while ($row = $result->fetch_array()) {
 
-                    }
+                    ?>
+
+                    <div id="bugitem">
+                        <h3><?php echo $row['bugName'] ?></h3>
+                        <h5><?php echo $row['BugCategory'] ?></h5>
+                        <p><?php echo $row['BugSummary'] ?></p>
+                    </div>
+
+                    <?php
+
+                }
+            }
             ?>
 
 
